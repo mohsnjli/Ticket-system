@@ -1,0 +1,211 @@
+@font-face {
+    font-family: shabnam;
+    src: url("/Fonts/Shabnam.ttf") format(truetype);
+}
+
+:root {
+    --button-ylw-img: linear-gradient(45deg, rgb(255, 60, 0) 10%, rgb(255, 187, 0) 90%);
+    --button-ylw-bg: rgb(255, 187, 0);
+    --button-ylw-bg2: rgb(255, 60, 0);
+    --button-anm-shdow: box-shadow 0.3s ease;
+}
+
+* {
+    direction: rtl;
+    font-family: shabnam;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgb(250, 191, 72)10%, rgb(255, 179, 0)40%);
+    background-size: cover;
+    display: flex;
+    z-index: -1;
+
+}
+
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+    width: 75vw;
+    height: 75vh;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.8) 90%);
+    box-shadow: 5px 5px 5px rgba(225, 225, 225, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+
+.formContainer,
+.countryContainer {
+    width: 50%;
+    height: 70%;
+    margin: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.formValidation {
+
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+   
+
+}
+
+.formValidation input,
+.formValidation button {
+    width: 50%;
+    border: none;
+    padding: 10px 0;
+    border-radius: 8px;
+
+}
+
+.formValidation label {
+    width: 50%;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    bottom: -45px;
+    /* --------------------------------- */
+    right: 14%;
+    width: 250px;
+    height: 80px;
+
+    border-radius: 25px;
+    animation: modal-anm 1s ease-in-out;
+}
+
+.modal>h3 {
+    font-weight: 200;
+}
+
+
+
+
+    #logBtn,
+    #signBtn {
+        width: 20%;
+    margin: 10px;
+}
+
+#logBtn {
+    text-transform: uppercase;
+    
+    font-size: medium;
+    background-image: var(--button-ylw-img);
+    transition: var(--button-anm-shdow),
+        color 0.3s ease;
+    border: 1px sold rgb(255, 217, 0);
+}
+
+#logBtn:hover {
+    box-shadow: 0 0 2px var(--button-ylw-bg),
+        0 0 4px var(--button-ylw-bg2),
+        0 0 6px var(--button-ylw-bg),
+        0 0 8px var(--button-ylw-bg2);
+    color: white;
+
+}
+
+#signBtn {
+    text-transform: uppercase;
+    
+    font-size: medium;
+    background-color: white;
+    transition: var(--button-anm-shdow);
+    transition: background-image 0.3s ease,
+        color 0.3s ease;
+}
+
+#signBtn:hover {
+    background-image: var(--button-ylw-img);
+    color: white;
+}
+
+
+
+
+@keyframes modal-anm {
+    0% {
+        bottom: -500px;
+    }
+
+    100% {
+        bottom: -15px;
+    }
+
+    
+}
+
+
+
+
+
+/* ------------------right section ------------------- */
+
+
+.countryContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(50px);
+}
+
+.countryContainer h1 {
+    margin-top: 30px;
+}
+
+.cities,
+.countries {
+    
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countries span,
+.cities span ,
+.countries option , 
+.cities option , 
+h1 ,.price > h2 {
+    font-weight: 200;
+}
+select {
+    transition: all 0.3s ease-in-out;
+    padding:5px 15px;
+    border: none;
+    margin-top: 8px;
+    border-radius: 8px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa-IR" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body class="w-screen h-screen">
+    <header class=" h-16 bg-lightGray dark:bg-secondary flex items-center justify-center flex-row-reverse">
+        <ul class="w-1/2 h-full flex flex-row justify-end items-center">
+            <a href="#" class="mr-14 li-anim-hover group">
+                <li class="text-darkGray dark:text-white hover:font-semibold group-hover:text-blue-twt">بلیط ها<i
+                        class="fa-solid fa-ticket dark:text-white ml-2 group-hover:text-blue-twt "></i></li>
+            </a>
+            <a href="#" class="mr-14 li-anim-hover group">
+                <li class="text-darkGray dark:text-white hover:font-semibold group-hover:text-blue-twt">پشتیبانی<i
+                        class="fa-solid fa-envelope dark:text-white ml-2 group-hover:text-blue-twt"></i>
+                </li>
+            </a>
+            <a href="#" class="mr-14 li-anim-hover boing group">
+                <li class="text-darkGray dark:text-white hover:font-semibold group-hover:text-blue-twt">اخبار<i
+                        class="fa-solid fa-newspaper dark:text-white ml-2 group-hover:text-blue-twt"></i></li>
+            </a>
+            <a href="#" class="mr-14 li-anim-hover group">
+                <li class="text-darkGray dark:text-white hover:font-semibold group-hover:text-blue-twt">صفحه اصلی<i
+                        class="fa-solid fa-home dark:text-white ml-2 group-hover:text-blue-twt"></i></li>
+            </a>
+        </ul>
+        <div class="w-1/2 h-full flex items-center">
+            <button id="darkModeBtn" class="ml-6 bg-slate-100 w-10 h-10 rounded-full group-hover:text-blue-twt"><i
+                    id="darkModeIcon"
+                    class="fa-solid fa-moon text-2xl dark:text-secondary group-hover:text-blue-twt"></i></button>
+        </div>
+    </header>
+
+    <section class="w-screen h-screen bg-light-bg dark:bg-darkGray flex items-center justify-center">
+
+        <div class="w-2/3 h-4/5 dark:bg-secondary rounded-3xl p-4 shadow-xl backdrop-blur-lg">
+            <form action=""
+                class="w-full h-3/4 flex items-center justify-center flex-row bg-slate-100 rounded-3xl dark:bg-darkGray shadow-4xl dark:shadow-white ">
+                <div id="right" class="w-full h-full flex items-center justify-center flex-col">
+                    <label for="fname" class="dark:text-slate-200 mb-2 relative right-2 w-1/2" dir="rtl"> نام</label>
+                    <input type="text" name="fname"
+                        class="w-input bg-slate-200 focus:bg-white shadow-lg mb-10 p-2 dark:bg-slate-600 rounded-xl">
+                    <label for="mail" class="dark:text-slate-200 mb-2  relative right-2 w-1/2" dir="rtl"> ایمیل</label>
+                    <input type="email" name="mail"
+                        class="w-input bg-slate-200 focus:bg-white shadow-lg mb-10 p-2 dark:bg-slate-600 rounded-xl">
+                        <label for="country-select" class="mb-4 dark:text-white relative -right-24 ">کشور</label>
+                    <select style="text-align: center;" name="country-select" id="countryBox" class="mb-10 p-2 w-input rounded-xl bg-slate-200 text-black dark:bg-slate-600 ">
+                       <option value="PSC" >Select Country</option>
+                        <option value="Iran">Iran</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="America">America</option>
+                        
+                    </select>
+                </div>
+                <div id="left" class="w-full h-full flex items-center justify-center flex-col">
+                    <label for="lname" class="dark:text-slate-200 mb-2  relative right-2 w-1/2" dir="rtl">نام
+                        خانوادگی</label>
+                    <input type="text" name="lname"
+                        class="w-input bg-slate-200 focus:bg-white shadow-lg mb-10 p-2 rounded-xl dark:bg-slate-600">
+                    <label for="tel" class="dark:text-slate-200 mb-2   relative right-2 w-1/2" dir="rtl">شماره تلفن</label>
+                    <input type="tel" name="tel"
+                        class="w-input bg-slate-200 focus:bg-white shadow-lg mb-10 p-2 rounded-xl dark:bg-slate-600">
+                        <label dir="rtl" for="city-select" class="mb-4 dark:text-white relative right-4 w-1/2
+                        ">شهر </label>
+                    <select dir="rtl" style="text-align:center;" name="city-select" id="cityBox" class="mb-10 p-2 w-input rounded-xl bg-slate-200 text-black dark:bg-slate-600 ">
+                       <option class="cityClass" >Please Enter The Country</option>
+                    </select>
+                </div>
+            </form>
+            <div class="m-auto w-full h-28 mt-2 rounded-2xl flex items-center justify-center">
+                <button
+                    class="relative button-86 bg-gray-300 text-darkGray px-6 py-2 m-1 rounded-xl after:content-[''] after:w-0 after:h-4 after:bg-gray-300 after:-translate-x-1/2 after:translate-y-1/2 after:rounded-full after:left-0 after:bottom-1/2 after:absolute after:backdrop-blur-sm after:transition-all after:duration-300 hover:after:-left-2 hover:after:w-6 hover:after:h-1 hover:after:bg-black hover:after:rounded-3xl after:dark:bg-white">مرحله
+                    بعد</button>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
